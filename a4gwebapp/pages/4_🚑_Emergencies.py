@@ -62,10 +62,6 @@ with emergency_page:
         st.write("**Drugs Overdosed On:**", overdoses)
         st.write("**Time of Overdose:**", overdose_time)
         st.write("**List of Symptoms:**")
-        if nal_status == "Yes":
-            st.write("**Naloxone Administered:** Yes")
-        else:
-            st.write("**Naloxone Administered:** No")
         if face == "Yes":
             st.write("- Person's face is extremely pale and/or feels clammy to the touch")
         if body == "Yes":
@@ -78,3 +74,9 @@ with emergency_page:
             st.write("- Person has vomited or feels nauseous to the point of vomiting")
         if slowing == "Yes":
             st.write("- Person's heartbeat or pulse is slowing")
+        
+        if nal_status == "Yes":
+            st.write("**Naloxone Administered:** Yes")
+
+        else:
+            st.write("**Naloxone Administered:** No")
